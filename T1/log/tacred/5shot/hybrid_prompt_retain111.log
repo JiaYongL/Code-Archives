@@ -1,0 +1,46 @@
+True
+config: 
+{
+    "batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "total_round": 6,
+    "drop_out": 0.5,
+    "num_workers": 2,
+    "step1_epochs": 10,
+    "step2_epochs": 10,
+    "step3_epochs": 10,
+    "num_protos": 1,
+    "device": "cuda",
+    "seed": 100,
+    "max_grad_norm": 10,
+    "task_length": 8,
+    "kl_temp": 2,
+    "temp": 0.1,
+    "bert_path": "./bert-base-uncased",
+    "max_length": 256,
+    "vocab_size": 30522,
+    "marker_size": 4,
+    "pattern": "hybrid_prompt",
+    "template": "[E1] [MASK] [E2]",
+    "encoder_output_size": 768,
+    "drop_p": 0.1,
+    "f_pass": 10,
+    "kappa_neg": 0.03,
+    "kappa_pos": 0.05,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2,
+    "decay_rate": 0.9,
+    "decay_steps": 800,
+    "num_of_relation": 41,
+    "rel_index": "data/tacred/rel_index.npy",
+    "relation_file": "data/tacred/relation_name.txt",
+    "rel_cluster_label": "data/tacred/CFRLdata_10_100_10_5/rel_cluster_label_0.npy",
+    "training_file": "data/tacred/CFRLdata_10_100_10_5/train_0.txt",
+    "valid_file": "data/tacred/CFRLdata_10_100_10_5/valid_0.txt",
+    "test_file": "data/tacred/CFRLdata_10_100_10_5/test_0.txt",
+    "retain_prev": true,
+    "use_marker": true
+}
+----------------------------------------
+set seed: 100
+Shuffle index: [7 0 6 2 5 1 4 3]

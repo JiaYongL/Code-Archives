@@ -1,0 +1,55 @@
+config: 
+{
+    "batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "total_round": 6,
+    "drop_out": 0.5,
+    "num_workers": 2,
+    "step1_epochs": 10,
+    "step2_epochs": 10,
+    "step3_epochs": 10,
+    "num_protos": 1,
+    "device": "cuda",
+    "seed": 100,
+    "max_grad_norm": 10,
+    "task_length": 8,
+    "kl_temp": 2,
+    "temp": 0.1,
+    "bert_path": "./bert-base-uncased",
+    "max_length": 256,
+    "vocab_size": 30522,
+    "marker_size": 4,
+    "template": "[E1] [MASK] [E2]",
+    "pattern": "prompt",
+    "encoder_output_size": 768,
+    "drop_p": 0.1,
+    "f_pass": 10,
+    "kappa_neg": 0.03,
+    "kappa_pos": 0.05,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2,
+    "decay_rate": 0.9,
+    "decay_steps": 800,
+    "num_of_relation": 80,
+    "rel_index": "data/fewrel/rel_index.npy",
+    "relation_file": "data/fewrel/relation_name.txt",
+    "rel_cluster_label": "data/fewrel/CFRLdata_10_100_10_5/rel_cluster_label_0.npy",
+    "training_file": "data/fewrel/CFRLdata_10_100_10_5/train_0.txt",
+    "valid_file": "data/fewrel/CFRLdata_10_100_10_5/valid_0.txt",
+    "test_file": "data/fewrel/CFRLdata_10_100_10_5/test_0.txt"
+}
+----------------------------------------
+set seed: 100
+Shuffle index: [7 0 6 2 5 1 4 3]
+round: 0, current_acc: [0.928, 0.573, 0.612, 0.768, 0.626, 0.694, 0.582, 0.669], history_acc: [0.928, 0.731, 0.665, 0.667, 0.6454, 0.6221666666666666, 0.579, 0.56525]
+set seed: 200
+Shuffle index: [7 6 5 2 1 0 3 4]
+round: 1, current_acc: [0.953, 0.635, 0.746, 0.772, 0.769, 0.724, 0.836, 0.743], history_acc: [0.953, 0.7865, 0.7486666666666667, 0.71025, 0.688, 0.643, 0.6451428571428571, 0.622625]
+set seed: 300
+Shuffle index: [7 3 2 5 0 6 4 1]
+round: 2, current_acc: [0.96, 0.796, 0.7, 0.735, 0.882, 0.682, 0.714, 0.749], history_acc: [0.96, 0.8655, 0.7693333333333333, 0.7265, 0.7306, 0.6843333333333333, 0.6515714285714286, 0.651]
+set seed: 400
+Shuffle index: [7 3 1 6 0 5 2 4]
+round: 3, current_acc: [0.953, 0.698, 0.793, 0.776, 0.864, 0.713, 0.792, 0.644], history_acc: [0.953, 0.8085, 0.7806666666666666, 0.7225, 0.7142, 0.6825, 0.6671428571428571, 0.628]
+set seed: 500
+Shuffle index: [7 0 2 1 5 4 3 6]

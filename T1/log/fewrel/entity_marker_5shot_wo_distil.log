@@ -1,0 +1,1251 @@
+config: 
+{
+    "batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "total_round": 6,
+    "drop_out": 0.5,
+    "num_workers": 2,
+    "step1_epochs": 10,
+    "step2_epochs": 10,
+    "step3_epochs": 10,
+    "num_protos": 1,
+    "device": "cuda",
+    "seed": 100,
+    "max_grad_norm": 10,
+    "task_length": 8,
+    "kl_temp": 2,
+    "temp": 0.1,
+    "bert_path": "./bert-base-uncased",
+    "max_length": 256,
+    "vocab_size": 30522,
+    "marker_size": 4,
+    "template": "[E1] [MASK] [E2]",
+    "pattern": "entity_marker",
+    "encoder_output_size": 768,
+    "drop_p": 0.1,
+    "f_pass": 10,
+    "kappa_neg": 0.03,
+    "kappa_pos": 0.05,
+    "T_mult": 1,
+    "rewarm_epoch_num": 2,
+    "decay_rate": 0.9,
+    "decay_steps": 800,
+    "num_of_relation": 80,
+    "rel_index": "data/fewrel/rel_index.npy",
+    "relation_file": "data/fewrel/relation_name.txt",
+    "rel_cluster_label": "data/fewrel/CFRLdata_10_100_10_5/rel_cluster_label_0.npy",
+    "training_file": "data/fewrel/CFRLdata_10_100_10_5/train_0.txt",
+    "valid_file": "data/fewrel/CFRLdata_10_100_10_5/valid_0.txt",
+    "test_file": "data/fewrel/CFRLdata_10_100_10_5/test_0.txt",
+    "num_classes": 80,
+    "base_class": 10,
+    "shift_weight": 0.1,
+    "temperature": 16,
+    "softmax_t": 16,
+    "way": 10
+}
+----------------------------------------
+set seed: 100
+Shuffle index: [7 0 6 2 5 1 4 3]
+start training simple model
+start training memory model
+epoch 0, loss is 1.1809230177402497
+epoch 1, loss is 0.682675579547882
+epoch 2, loss is 0.4575221676668152
+epoch 3, loss is 0.3326738107563433
+epoch 4, loss is 0.27931904228415805
+epoch 5, loss is 0.19793624135735444
+epoch 6, loss is 0.18263744567054163
+epoch 7, loss is 0.16948963727766386
+epoch 8, loss is 0.14634868455016112
+epoch 9, loss is 0.1328240524965513
+start training memory model
+epoch 0, loss is 0.292545227174287
+epoch 1, loss is 0.07281458597708479
+epoch 2, loss is 0.07958754101582599
+epoch 3, loss is 0.08098186649537453
+epoch 4, loss is 0.30329679581410574
+epoch 5, loss is 0.0667992903929644
+epoch 6, loss is 0.07143510830531596
+epoch 7, loss is 0.31728541835576607
+epoch 8, loss is 0.07008600756373085
+epoch 9, loss is 0.07423968932771174
+start training simple model
+start training memory model
+epoch 0, loss is 1.6560558399983816
+epoch 1, loss is 1.4719826238495963
+epoch 2, loss is 1.0944182574748993
+epoch 3, loss is 0.8974250708041447
+epoch 4, loss is 0.6411018847221774
+epoch 5, loss is 0.902891776391438
+epoch 6, loss is 0.6301939891917365
+epoch 7, loss is 0.7282723784446716
+epoch 8, loss is 0.5448996509824481
+epoch 9, loss is 0.5551554321178368
+start training memory model
+epoch 0, loss is 6.467568238576253
+epoch 1, loss is 4.976797501246135
+epoch 2, loss is 3.945255915323893
+epoch 3, loss is 2.5851685206095376
+epoch 4, loss is 2.387768268585205
+epoch 5, loss is 1.5185884435971577
+epoch 6, loss is 1.4987971782684326
+epoch 7, loss is 1.4054065148035686
+epoch 8, loss is 1.167252739270528
+epoch 9, loss is 1.128187398115794
+start training simple model
+start training memory model
+epoch 0, loss is 4.312933598245893
+epoch 1, loss is 3.823502608707973
+epoch 2, loss is 3.2079344987869263
+epoch 3, loss is 2.8812874385288785
+epoch 4, loss is 2.790841749736241
+epoch 5, loss is 3.0475411925997054
+epoch 6, loss is 2.9613404784883772
+epoch 7, loss is 2.9587203434535434
+epoch 8, loss is 2.1269220150341943
+epoch 9, loss is 2.265939678464617
+start training memory model
+epoch 0, loss is 8.153918981552124
+epoch 1, loss is 6.258484721183777
+epoch 2, loss is 4.578308701515198
+epoch 3, loss is 3.426701784133911
+epoch 4, loss is 2.7966060042381287
+epoch 5, loss is 2.5046055018901825
+epoch 6, loss is 2.101173475384712
+epoch 7, loss is 1.5959345698356628
+epoch 8, loss is 1.4360319525003433
+epoch 9, loss is 1.3570706844329834
+start training simple model
+start training memory model
+epoch 0, loss is 1.6138715062822615
+epoch 1, loss is 1.7560110901083266
+epoch 2, loss is 0.91587048130376
+epoch 3, loss is 0.8591857360942023
+epoch 4, loss is 0.5523218704121453
+epoch 5, loss is 0.6443830928765237
+epoch 6, loss is 0.5897685629980904
+epoch 7, loss is 0.4250225864483842
+epoch 8, loss is 0.4028081498191958
+epoch 9, loss is 0.38580904262406485
+start training memory model
+epoch 0, loss is 6.838323497772217
+epoch 1, loss is 4.930973958969116
+epoch 2, loss is 3.5392426013946534
+epoch 3, loss is 2.7888407468795777
+epoch 4, loss is 2.12882604598999
+epoch 5, loss is 1.6411330699920654
+epoch 6, loss is 1.303352129459381
+epoch 7, loss is 1.0155792474746703
+epoch 8, loss is 0.8699417531490325
+epoch 9, loss is 0.7365109622478485
+start training simple model
+start training memory model
+epoch 0, loss is 2.386681846209935
+epoch 1, loss is 1.8469616344996862
+epoch 2, loss is 1.7489943674632482
+epoch 3, loss is 1.324207944529397
+epoch 4, loss is 1.1608908772468567
+epoch 5, loss is 0.8675804516034467
+epoch 6, loss is 1.238288892166955
+epoch 7, loss is 0.8110423133974629
+epoch 8, loss is 0.7482526004314423
+epoch 9, loss is 0.678168100970132
+start training memory model
+epoch 0, loss is 6.855265753609793
+epoch 1, loss is 4.494172368730817
+epoch 2, loss is 3.480649505342756
+epoch 3, loss is 2.4448980263301303
+epoch 4, loss is 1.630498571055276
+epoch 5, loss is 1.1980061147894179
+epoch 6, loss is 0.9139125261987958
+epoch 7, loss is 0.7512858510017395
+epoch 8, loss is 0.6260097133261817
+epoch 9, loss is 0.7589701009648187
+start training simple model
+start training memory model
+epoch 0, loss is 3.2094524928501675
+epoch 1, loss is 2.47839549609593
+epoch 2, loss is 2.5500246626990184
+epoch 3, loss is 2.2665916681289673
+epoch 4, loss is 1.8136323520115443
+epoch 5, loss is 2.131278089114598
+epoch 6, loss is 1.8220651064600264
+epoch 7, loss is 1.9161064624786377
+epoch 8, loss is 1.770879796573094
+epoch 9, loss is 1.8660004053797041
+start training memory model
+epoch 0, loss is 7.3757100105285645
+epoch 1, loss is 4.794278830289841
+epoch 2, loss is 3.254207670688629
+epoch 3, loss is 2.5081697404384613
+epoch 4, loss is 1.7991018742322922
+epoch 5, loss is 1.36204107478261
+epoch 6, loss is 1.0205079838633537
+epoch 7, loss is 0.837474912405014
+epoch 8, loss is 0.7679166868329048
+epoch 9, loss is 0.7107559163123369
+start training simple model
+start training memory model
+epoch 0, loss is 2.4060646976743425
+epoch 1, loss is 1.964216709136963
+epoch 2, loss is 1.6798201969691686
+epoch 3, loss is 1.6761916960988725
+epoch 4, loss is 1.3864784411021642
+epoch 5, loss is 1.3118822830063956
+epoch 6, loss is 1.3326084188052587
+epoch 7, loss is 1.2737067426953996
+epoch 8, loss is 0.8973629127389618
+epoch 9, loss is 0.9042968153953552
+start training memory model
+epoch 0, loss is 7.400071673923069
+epoch 1, loss is 4.493996010886298
+epoch 2, loss is 3.1501113308800592
+epoch 3, loss is 2.1449889871809216
+epoch 4, loss is 1.5246188905504015
+epoch 5, loss is 1.1033430231942072
+epoch 6, loss is 0.808737016386456
+epoch 7, loss is 0.6128876374827491
+epoch 8, loss is 0.5459633138444688
+epoch 9, loss is 0.44684532781442005
+start training simple model
+start training memory model
+epoch 0, loss is 2.5333227259772166
+epoch 1, loss is 2.45376946244921
+epoch 2, loss is 1.9388300776481628
+epoch 3, loss is 1.8325323377336775
+epoch 4, loss is 1.5930400235312325
+epoch 5, loss is 1.3315054178237915
+epoch 6, loss is 1.4178495407104492
+epoch 7, loss is 1.3647343601499284
+epoch 8, loss is 1.139209074633462
+epoch 9, loss is 1.0447443170206887
+start training memory model
+epoch 0, loss is 7.134362030029297
+epoch 1, loss is 4.4084433794021605
+epoch 2, loss is 3.090137481689453
+epoch 3, loss is 2.101919400691986
+epoch 4, loss is 1.464103627204895
+epoch 5, loss is 0.9950164437294007
+epoch 6, loss is 0.7794390588998794
+epoch 7, loss is 0.624262772500515
+epoch 8, loss is 0.501228965818882
+epoch 9, loss is 0.4795138046145439
+round: 0, current_acc: [0.954, 0.787, 0.781, 0.912, 0.82, 0.812, 0.698, 0.793], history_acc: [0.954, 0.799, 0.7766666666666666, 0.74025, 0.7068, 0.6676666666666666, 0.6454285714285715, 0.6205]
+set seed: 200
+Shuffle index: [7 6 5 2 1 0 3 4]
+start training simple model
+start training memory model
+epoch 0, loss is 1.245178772330284
+epoch 1, loss is 0.8225933455377817
+epoch 2, loss is 0.5535659186048433
+epoch 3, loss is 0.3689010023474693
+epoch 4, loss is 0.28048856278904716
+epoch 5, loss is 0.2207976454555901
+epoch 6, loss is 0.18267664247818174
+epoch 7, loss is 0.15071685544268257
+epoch 8, loss is 0.14544383989477866
+epoch 9, loss is 0.13133851116032746
+start training memory model
+epoch 0, loss is 0.058714605923114505
+epoch 1, loss is 0.061793162936908175
+epoch 2, loss is 0.13093054294586182
+epoch 3, loss is 0.0644637355580926
+epoch 4, loss is 0.0701303672750555
+epoch 5, loss is 0.06755839863512847
+epoch 6, loss is 0.054928717550652095
+epoch 7, loss is 0.07204876392330561
+epoch 8, loss is 0.05422780461391241
+epoch 9, loss is 0.05257607067072456
+start training simple model
+start training memory model
+epoch 0, loss is 2.869018486567906
+epoch 1, loss is 1.6769176040376936
+epoch 2, loss is 1.912490657397679
+epoch 3, loss is 1.3311251747821058
+epoch 4, loss is 1.250212733234678
+epoch 5, loss is 1.790034572993006
+epoch 6, loss is 1.0648984225200755
+epoch 7, loss is 1.242597014776298
+epoch 8, loss is 0.9690957883638995
+epoch 9, loss is 1.3921359500714712
+start training memory model
+epoch 0, loss is 6.435902913411458
+epoch 1, loss is 4.500107367833455
+epoch 2, loss is 3.8067378997802734
+epoch 3, loss is 2.7626514434814453
+epoch 4, loss is 2.41936461130778
+epoch 5, loss is 1.9583037694295247
+epoch 6, loss is 0.9927128305037817
+epoch 7, loss is 1.3461328347524006
+epoch 8, loss is 1.0455693726738293
+epoch 9, loss is 0.7844254473845164
+start training simple model
+start training memory model
+epoch 0, loss is 1.403185180255345
+epoch 1, loss is 0.8840944341250828
+epoch 2, loss is 1.3121990306036813
+epoch 3, loss is 0.6597966530493328
+epoch 4, loss is 0.5592426317078727
+epoch 5, loss is 0.4937889724969864
+epoch 6, loss is 0.34396112051659394
+epoch 7, loss is 0.2072152203015451
+epoch 8, loss is 0.2986519698585783
+epoch 9, loss is 0.1797986582719854
+start training memory model
+epoch 0, loss is 6.672279536724091
+epoch 1, loss is 5.018584251403809
+epoch 2, loss is 3.840778648853302
+epoch 3, loss is 2.776390790939331
+epoch 4, loss is 2.1877958178520203
+epoch 5, loss is 1.550014168024063
+epoch 6, loss is 1.2953177094459534
+epoch 7, loss is 0.9550353288650513
+epoch 8, loss is 0.820813313126564
+epoch 9, loss is 0.8331600874662399
+start training simple model
+start training memory model
+epoch 0, loss is 2.499193923813956
+epoch 1, loss is 1.9658129896436418
+epoch 2, loss is 1.5590303029332842
+epoch 3, loss is 1.699863110269819
+epoch 4, loss is 1.3353042091642107
+epoch 5, loss is 1.2093988465411323
+epoch 6, loss is 1.2948297943387712
+epoch 7, loss is 1.0838985272816248
+epoch 8, loss is 1.0806526626859392
+epoch 9, loss is 0.7655886374081352
+start training memory model
+epoch 0, loss is 6.591337394714356
+epoch 1, loss is 4.875803518295288
+epoch 2, loss is 3.437205982208252
+epoch 3, loss is 2.401965045928955
+epoch 4, loss is 1.7349720001220703
+epoch 5, loss is 1.3939653396606446
+epoch 6, loss is 1.0490849494934082
+epoch 7, loss is 0.9380208015441894
+epoch 8, loss is 0.7459166884422302
+epoch 9, loss is 0.6278729021549225
+start training simple model
+start training memory model
+epoch 0, loss is 2.220775144440787
+epoch 1, loss is 1.9273825458117895
+epoch 2, loss is 2.034780808857509
+epoch 3, loss is 1.6387341703687395
+epoch 4, loss is 1.4364219500816293
+epoch 5, loss is 1.3123269293989455
+epoch 6, loss is 1.6395558225257056
+epoch 7, loss is 1.2116182020732336
+epoch 8, loss is 1.1885010855538505
+epoch 9, loss is 1.0962622390777272
+start training memory model
+epoch 0, loss is 7.456874166216169
+epoch 1, loss is 4.781935283115932
+epoch 2, loss is 3.4027200766972134
+epoch 3, loss is 2.300637517656599
+epoch 4, loss is 1.559879950114659
+epoch 5, loss is 1.5399526272501265
+epoch 6, loss is 0.9304761673722949
+epoch 7, loss is 0.8570436707564763
+epoch 8, loss is 0.7291938832827977
+epoch 9, loss is 0.5878404400178364
+start training simple model
+start training memory model
+epoch 0, loss is 2.8751822199140276
+epoch 1, loss is 2.4008431434631348
+epoch 2, loss is 2.1070161717278615
+epoch 3, loss is 1.8080898353031702
+epoch 4, loss is 1.7721286160605294
+epoch 5, loss is 1.8523160134043013
+epoch 6, loss is 1.4744379264967782
+epoch 7, loss is 1.260750630072185
+epoch 8, loss is 1.3241456832204546
+epoch 9, loss is 1.1587921338421958
+start training memory model
+epoch 0, loss is 7.845178186893463
+epoch 1, loss is 4.853334605693817
+epoch 2, loss is 3.2546001076698303
+epoch 3, loss is 2.5162748992443085
+epoch 4, loss is 1.7940920889377594
+epoch 5, loss is 1.316628411412239
+epoch 6, loss is 0.9667220935225487
+epoch 7, loss is 0.7953883931040764
+epoch 8, loss is 0.729133527725935
+epoch 9, loss is 0.607520392164588
+start training simple model
+start training memory model
+epoch 0, loss is 0.7547442947647401
+epoch 1, loss is 0.4201489482074976
+epoch 2, loss is 0.23068379145115614
+epoch 3, loss is 0.2076969160365739
+epoch 4, loss is 0.13023440912365913
+epoch 5, loss is 0.14784244926912443
+epoch 6, loss is 0.053934084850230386
+epoch 7, loss is 0.0564420375573848
+epoch 8, loss is 0.0636316555319354
+epoch 9, loss is 0.03377749393361488
+start training memory model
+epoch 0, loss is 7.019972695244683
+epoch 1, loss is 4.300073173311022
+epoch 2, loss is 2.9301558865441217
+epoch 3, loss is 2.001265949673123
+epoch 4, loss is 1.3361045916875203
+epoch 5, loss is 0.9147744112544589
+epoch 6, loss is 0.710183302561442
+epoch 7, loss is 0.5397120714187622
+epoch 8, loss is 0.4466194146209293
+epoch 9, loss is 0.3866440463397238
+start training simple model
+start training memory model
+epoch 0, loss is 3.116656175681523
+epoch 1, loss is 2.7603785821369717
+epoch 2, loss is 2.448700632367815
+epoch 3, loss is 2.475538270814078
+epoch 4, loss is 2.370262861251831
+epoch 5, loss is 2.026404006140573
+epoch 6, loss is 2.2681935174124583
+epoch 7, loss is 1.8091806114784308
+epoch 8, loss is 1.7619642515533738
+epoch 9, loss is 1.7011017884526933
+start training memory model
+epoch 0, loss is 7.0297239303588865
+epoch 1, loss is 4.4737290143966675
+epoch 2, loss is 3.1417930841445925
+epoch 3, loss is 2.2725449323654177
+epoch 4, loss is 1.5586472511291505
+epoch 5, loss is 1.0786908328533173
+epoch 6, loss is 0.8172148704528809
+epoch 7, loss is 0.7001060768961906
+epoch 8, loss is 0.6518370315432549
+epoch 9, loss is 0.5404262393712997
+round: 1, current_acc: [0.949, 0.702, 0.752, 0.851, 0.764, 0.764, 0.895, 0.742], history_acc: [0.949, 0.7765, 0.7203333333333334, 0.671, 0.6562, 0.6033333333333334, 0.6068571428571429, 0.59425]
+set seed: 300
+Shuffle index: [7 3 2 5 0 6 4 1]
+start training simple model
+start training memory model
+epoch 0, loss is 1.4256142435073853
+epoch 1, loss is 0.8052550821900367
+epoch 2, loss is 0.535242090472253
+epoch 3, loss is 0.33579962419773074
+epoch 4, loss is 0.26553045054572794
+epoch 5, loss is 0.20676439449742612
+epoch 6, loss is 0.1774291018794611
+epoch 7, loss is 0.15493854114382702
+epoch 8, loss is 0.14779836477686878
+epoch 9, loss is 0.13675016030257756
+start training memory model
+epoch 0, loss is 0.08305528781494331
+epoch 1, loss is 0.0749968034668882
+epoch 2, loss is 0.08322332704918267
+epoch 3, loss is 0.09191085355625006
+epoch 4, loss is 0.09350056467985723
+epoch 5, loss is 0.06072346813683538
+epoch 6, loss is 0.06839002623367918
+epoch 7, loss is 0.26222940389007476
+epoch 8, loss is 0.255297346291826
+epoch 9, loss is 0.274039938011839
+start training simple model
+start training memory model
+epoch 0, loss is 3.173939824104309
+epoch 1, loss is 2.679781496524811
+epoch 2, loss is 2.853405918393816
+epoch 3, loss is 1.8654646234852927
+epoch 4, loss is 1.8072771430015564
+epoch 5, loss is 2.2231577400650298
+epoch 6, loss is 1.3329220236212547
+epoch 7, loss is 1.331156515915479
+epoch 8, loss is 1.2872358677310072
+epoch 9, loss is 1.2815650807959693
+start training memory model
+epoch 0, loss is 5.598836739857991
+epoch 1, loss is 4.975233872731526
+epoch 2, loss is 4.156749725341797
+epoch 3, loss is 2.9310821692148843
+epoch 4, loss is 2.549874941507975
+epoch 5, loss is 2.099979817867279
+epoch 6, loss is 2.145820220311483
+epoch 7, loss is 1.998068670431773
+epoch 8, loss is 1.3127275705337524
+epoch 9, loss is 1.2194208999474843
+start training simple model
+start training memory model
+epoch 0, loss is 2.4217811141695296
+epoch 1, loss is 1.513913835797991
+epoch 2, loss is 1.4657645736421858
+epoch 3, loss is 1.3327398129871912
+epoch 4, loss is 1.2098301478794642
+epoch 5, loss is 0.8625943224344935
+epoch 6, loss is 1.0282713515417916
+epoch 7, loss is 0.773178505046027
+epoch 8, loss is 0.6782236731212054
+epoch 9, loss is 0.6603173055087349
+start training memory model
+epoch 0, loss is 7.389637589454651
+epoch 1, loss is 5.623703718185425
+epoch 2, loss is 4.259643197059631
+epoch 3, loss is 3.174156427383423
+epoch 4, loss is 2.4148175567388535
+epoch 5, loss is 1.9146063029766083
+epoch 6, loss is 1.5301420837640762
+epoch 7, loss is 1.2715421915054321
+epoch 8, loss is 1.040482610464096
+epoch 9, loss is 1.0478289127349854
+start training simple model
+start training memory model
+epoch 0, loss is 2.513405007975442
+epoch 1, loss is 2.14417941229684
+epoch 2, loss is 1.9530731098992484
+epoch 3, loss is 1.5061490791184562
+epoch 4, loss is 1.5124115773609705
+epoch 5, loss is 1.2481739180428642
+epoch 6, loss is 1.4205689770834786
+epoch 7, loss is 0.8689320168923587
+epoch 8, loss is 1.0353915010179793
+epoch 9, loss is 1.134417508329664
+start training memory model
+epoch 0, loss is 7.096682548522949
+epoch 1, loss is 4.861201667785645
+epoch 2, loss is 3.5557940006256104
+epoch 3, loss is 2.662307071685791
+epoch 4, loss is 2.0028010845184325
+epoch 5, loss is 1.5489989042282104
+epoch 6, loss is 1.2638428211212158
+epoch 7, loss is 0.9510753631591797
+epoch 8, loss is 0.7314427375793457
+epoch 9, loss is 0.715157014131546
+start training simple model
+start training memory model
+epoch 0, loss is 1.0033119746616908
+epoch 1, loss is 0.6210883174623761
+epoch 2, loss is 0.47866322313036236
+epoch 3, loss is 0.672869337456567
+epoch 4, loss is 0.2730857309486185
+epoch 5, loss is 0.2540351270831057
+epoch 6, loss is 0.25600472199065344
+epoch 7, loss is 0.17719362622925214
+epoch 8, loss is 0.13743139225490658
+epoch 9, loss is 0.16506913633617973
+start training memory model
+epoch 0, loss is 7.5660593169076105
+epoch 1, loss is 4.041714106287275
+epoch 2, loss is 2.8682802745274136
+epoch 3, loss is 1.9634600515876497
+epoch 4, loss is 1.4229365246636527
+epoch 5, loss is 1.0421686172485352
+epoch 6, loss is 0.6976339519023895
+epoch 7, loss is 0.5129171801464898
+epoch 8, loss is 0.5745876090867179
+epoch 9, loss is 0.3518764504364559
+start training simple model
+start training memory model
+epoch 0, loss is 1.7140380995614188
+epoch 1, loss is 1.2793645134993963
+epoch 2, loss is 1.1128903201648168
+epoch 3, loss is 1.0527775372777666
+epoch 4, loss is 0.6833114198275975
+epoch 5, loss is 0.5325404852628708
+epoch 6, loss is 0.5633004818643842
+epoch 7, loss is 0.43574262516839163
+epoch 8, loss is 0.3877383087362562
+epoch 9, loss is 0.32295702610697063
+start training memory model
+epoch 0, loss is 7.506773412227631
+epoch 1, loss is 4.610424697399139
+epoch 2, loss is 3.0891096144914627
+epoch 3, loss is 2.3090179562568665
+epoch 4, loss is 1.5461675971746445
+epoch 5, loss is 1.04312863945961
+epoch 6, loss is 0.7280681021511555
+epoch 7, loss is 0.6867030523717403
+epoch 8, loss is 0.5595663785934448
+epoch 9, loss is 0.4614286236464977
+start training simple model
+start training memory model
+epoch 0, loss is 2.915215696607317
+epoch 1, loss is 2.513945988246373
+epoch 2, loss is 1.9907484842198235
+epoch 3, loss is 1.7933040261268616
+epoch 4, loss is 1.6536842840058463
+epoch 5, loss is 1.5211916054998125
+epoch 6, loss is 1.6149466378348214
+epoch 7, loss is 1.6173388276781355
+epoch 8, loss is 1.5993920649800981
+epoch 9, loss is 1.4050660133361816
+start training memory model
+epoch 0, loss is 7.670963552263048
+epoch 1, loss is 4.710170030593872
+epoch 2, loss is 3.131462468041314
+epoch 3, loss is 2.1578395896487765
+epoch 4, loss is 1.5752286116282146
+epoch 5, loss is 1.0599159399668376
+epoch 6, loss is 0.7346083290047116
+epoch 7, loss is 0.5900879700978597
+epoch 8, loss is 0.5313880542914072
+epoch 9, loss is 0.4714760018719567
+start training simple model
+start training memory model
+epoch 0, loss is 1.5789395230157035
+epoch 1, loss is 1.2497531601360865
+epoch 2, loss is 0.7567910104990005
+epoch 3, loss is 0.679778381649937
+epoch 4, loss is 0.7519134261778423
+epoch 5, loss is 0.5110866844188422
+epoch 6, loss is 0.49884358098331305
+epoch 7, loss is 0.48462300428322386
+epoch 8, loss is 0.41139155722755405
+epoch 9, loss is 0.4923414630549295
+start training memory model
+epoch 0, loss is 7.360563325881958
+epoch 1, loss is 4.407555866241455
+epoch 2, loss is 2.9149749279022217
+epoch 3, loss is 2.020918643474579
+epoch 4, loss is 1.2937639117240907
+epoch 5, loss is 0.8718242824077607
+epoch 6, loss is 0.5982499241828918
+epoch 7, loss is 0.4949726313352585
+epoch 8, loss is 0.40895976126194
+epoch 9, loss is 0.3568521037697792
+round: 2, current_acc: [0.949, 0.863, 0.753, 0.756, 0.921, 0.693, 0.73, 0.764], history_acc: [0.949, 0.822, 0.7393333333333333, 0.67225, 0.664, 0.6576666666666666, 0.6197142857142857, 0.62275]
+set seed: 400
+Shuffle index: [7 3 1 6 0 5 2 4]
+start training simple model
+start training memory model
+epoch 0, loss is 1.0512197648882866
+epoch 1, loss is 0.537687558054924
+epoch 2, loss is 0.3501636043177714
+epoch 3, loss is 0.20352022660047805
+epoch 4, loss is 0.15484066422103934
+epoch 5, loss is 0.12710095396863108
+epoch 6, loss is 0.0911939786071016
+epoch 7, loss is 0.08486876607799422
+epoch 8, loss is 0.058744504328064065
+epoch 9, loss is 0.04823012895523243
+start training memory model
+epoch 0, loss is 0.022493938803108904
+epoch 1, loss is 0.029492960250181
+epoch 2, loss is 0.028801003280960913
+epoch 3, loss is 0.051047311708458665
+epoch 4, loss is 0.022843095586040363
+epoch 5, loss is 0.020285736086023576
+epoch 6, loss is 0.026080981863518815
+epoch 7, loss is 0.13806672448740187
+epoch 8, loss is 0.017574859688979316
+epoch 9, loss is 0.019900667356491653
+start training simple model
+start training memory model
+epoch 0, loss is 3.6559108325413296
+epoch 1, loss is 2.4178731611796787
+epoch 2, loss is 2.4340583767209734
+epoch 3, loss is 1.6490259383405959
+epoch 4, loss is 2.117352979523795
+epoch 5, loss is 1.5484647580555506
+epoch 6, loss is 1.567555410521371
+epoch 7, loss is 1.3472239971160889
+epoch 8, loss is 1.3136318836893355
+epoch 9, loss is 1.1349481344223022
+start training memory model
+epoch 0, loss is 5.43353255589803
+epoch 1, loss is 4.005122661590576
+epoch 2, loss is 3.0375488996505737
+epoch 3, loss is 3.0168685913085938
+epoch 4, loss is 2.5082967281341553
+epoch 5, loss is 1.9051705201466878
+epoch 6, loss is 1.5449185371398926
+epoch 7, loss is 1.272428313891093
+epoch 8, loss is 1.0835858186086018
+epoch 9, loss is 1.0341999878485997
+start training simple model
+start training memory model
+epoch 0, loss is 2.3870708090918407
+epoch 1, loss is 2.3016650676727295
+epoch 2, loss is 1.6049850327628
+epoch 3, loss is 1.5836068136351449
+epoch 4, loss is 1.3100824058055878
+epoch 5, loss is 1.2895693991865431
+epoch 6, loss is 1.2557459218161446
+epoch 7, loss is 1.2008127910750253
+epoch 8, loss is 1.3997053078242712
+epoch 9, loss is 0.9431156473500388
+start training memory model
+epoch 0, loss is 6.372155666351318
+epoch 1, loss is 4.57880312204361
+epoch 2, loss is 3.4781568944454193
+epoch 3, loss is 2.657787948846817
+epoch 4, loss is 2.1477417945861816
+epoch 5, loss is 1.5530534237623215
+epoch 6, loss is 1.2481476962566376
+epoch 7, loss is 1.0045510679483414
+epoch 8, loss is 0.9932830259203911
+epoch 9, loss is 0.7831829749047756
+start training simple model
+start training memory model
+epoch 0, loss is 2.184877174241202
+epoch 1, loss is 1.960573366710118
+epoch 2, loss is 1.6800495386123657
+epoch 3, loss is 1.3800584767013788
+epoch 4, loss is 1.6548619440623693
+epoch 5, loss is 1.1488838801160455
+epoch 6, loss is 1.1284208042281014
+epoch 7, loss is 1.050048114998
+epoch 8, loss is 0.9188316187688282
+epoch 9, loss is 0.8734055398298162
+start training memory model
+epoch 0, loss is 6.948725605010987
+epoch 1, loss is 4.954450273513794
+epoch 2, loss is 3.655409812927246
+epoch 3, loss is 2.5239447116851808
+epoch 4, loss is 1.8811799526214599
+epoch 5, loss is 1.3582571744918823
+epoch 6, loss is 1.1948296785354615
+epoch 7, loss is 0.8681840181350708
+epoch 8, loss is 0.7290238618850708
+epoch 9, loss is 0.6397717475891114
+start training simple model
+start training memory model
+epoch 0, loss is 1.5346682582582747
+epoch 1, loss is 0.7828344929564212
+epoch 2, loss is 0.8578905633517674
+epoch 3, loss is 0.6407627931662968
+epoch 4, loss is 0.5001668461731502
+epoch 5, loss is 0.35874723536627634
+epoch 6, loss is 0.2878272086381912
+epoch 7, loss is 0.2248636218053954
+epoch 8, loss is 0.25878873048350215
+epoch 9, loss is 0.22482676458145892
+start training memory model
+epoch 0, loss is 6.839728082929339
+epoch 1, loss is 4.3157388482775
+epoch 2, loss is 2.6594560061182295
+epoch 3, loss is 1.9035353788307734
+epoch 4, loss is 1.2667306789330073
+epoch 5, loss is 0.9338327986853463
+epoch 6, loss is 0.5872450140970094
+epoch 7, loss is 0.45604164472648073
+epoch 8, loss is 0.34382410986082895
+epoch 9, loss is 0.2755367436579296
+start training simple model
+start training memory model
+epoch 0, loss is 1.4804254599979945
+epoch 1, loss is 1.0961131012798953
+epoch 2, loss is 0.9663916075868266
+epoch 3, loss is 0.8189984900610787
+epoch 4, loss is 0.7157691206250872
+epoch 5, loss is 0.4783740018361381
+epoch 6, loss is 0.5213406490428107
+epoch 7, loss is 0.39449769045625416
+epoch 8, loss is 0.36513484588691164
+epoch 9, loss is 0.355649792190109
+start training memory model
+epoch 0, loss is 7.222602725028992
+epoch 1, loss is 4.503146797418594
+epoch 2, loss is 3.0121268182992935
+epoch 3, loss is 2.0470040589571
+epoch 4, loss is 1.3850248083472252
+epoch 5, loss is 0.9907922297716141
+epoch 6, loss is 0.6675953827798367
+epoch 7, loss is 0.5670760460197926
+epoch 8, loss is 0.4804985374212265
+epoch 9, loss is 0.4518230929970741
+start training simple model
+start training memory model
+epoch 0, loss is 1.578890596117292
+epoch 1, loss is 0.8787544284548078
+epoch 2, loss is 0.9642780082566398
+epoch 3, loss is 0.7021312373025077
+epoch 4, loss is 0.5803511100155967
+epoch 5, loss is 0.46037086145952344
+epoch 6, loss is 0.3872355815754937
+epoch 7, loss is 0.37024428974837065
+epoch 8, loss is 0.4016140507800238
+epoch 9, loss is 0.33099619998496826
+start training memory model
+epoch 0, loss is 7.372161017523871
+epoch 1, loss is 4.459390481313069
+epoch 2, loss is 2.942005740271674
+epoch 3, loss is 1.8595596551895142
+epoch 4, loss is 1.2050795820024278
+epoch 5, loss is 0.7881969544622633
+epoch 6, loss is 0.5276516510380639
+epoch 7, loss is 0.38078757127126056
+epoch 8, loss is 0.2930597447686725
+epoch 9, loss is 0.21103885852628285
+start training simple model
+start training memory model
+epoch 0, loss is 2.6015161957059587
+epoch 1, loss is 2.4509170055389404
+epoch 2, loss is 2.0161480733326504
+epoch 3, loss is 1.8204115246023451
+epoch 4, loss is 1.9159372704369682
+epoch 5, loss is 1.9185896941593714
+epoch 6, loss is 1.7549215044294084
+epoch 7, loss is 1.6770313041550773
+epoch 8, loss is 1.349438658782414
+epoch 9, loss is 1.1792792422430856
+start training memory model
+epoch 0, loss is 7.029792165756225
+epoch 1, loss is 4.355098938941955
+epoch 2, loss is 2.81679048538208
+epoch 3, loss is 1.8843323707580566
+epoch 4, loss is 1.2087726652622224
+epoch 5, loss is 0.8244408190250396
+epoch 6, loss is 0.6215303599834442
+epoch 7, loss is 0.45181948840618136
+epoch 8, loss is 0.39524185210466384
+epoch 9, loss is 0.3363316416740417
+round: 3, current_acc: [0.942, 0.791, 0.821, 0.857, 0.883, 0.689, 0.794, 0.699], history_acc: [0.942, 0.778, 0.7393333333333333, 0.70075, 0.7172, 0.6793333333333333, 0.671, 0.6255]
+set seed: 500
+Shuffle index: [7 0 2 1 5 4 3 6]
+start training simple model
+start training memory model
+epoch 0, loss is 0.77668004386127
+epoch 1, loss is 0.33956760656367985
+epoch 2, loss is 0.14899023887113436
+epoch 3, loss is 0.07364591667070636
+epoch 4, loss is 0.04102639275608817
+epoch 5, loss is 0.05803422117398077
+epoch 6, loss is 0.031759128136456635
+epoch 7, loss is 0.013504584496547978
+epoch 8, loss is 0.02548845170079312
+epoch 9, loss is 0.006431054397879052
+start training memory model
+epoch 0, loss is 8.120310241110928e-06
+epoch 1, loss is 1.0498522371449326e-06
+epoch 2, loss is 0.006000957885099467
+epoch 3, loss is 7.115354243580896e-07
+epoch 4, loss is 9.444904947031318e-07
+epoch 5, loss is 5.47476034284955e-07
+epoch 6, loss is 2.54014004497094e-07
+epoch 7, loss is 2.602148789776493e-07
+epoch 8, loss is 2.687734124151575e-07
+epoch 9, loss is 2.1034553299159597e-07
+start training simple model
+start training memory model
+epoch 0, loss is 1.933638138430459
+epoch 1, loss is 1.2721328820501054
+epoch 2, loss is 1.0689859895833902
+epoch 3, loss is 0.9689420887402126
+epoch 4, loss is 0.705095609916108
+epoch 5, loss is 0.6095429084130696
+epoch 6, loss is 0.5618686654738018
+epoch 7, loss is 0.6244564539353762
+epoch 8, loss is 0.4745725654065609
+epoch 9, loss is 0.49979483815176146
+start training memory model
+epoch 0, loss is 4.735058307647705
+epoch 1, loss is 3.378655438621839
+epoch 2, loss is 2.9474395910898843
+epoch 3, loss is 2.467889746030172
+epoch 4, loss is 1.3417669932047527
+epoch 5, loss is 0.8304501374562582
+epoch 6, loss is 0.6722720464070638
+epoch 7, loss is 0.7402423818906149
+epoch 8, loss is 0.592827727397283
+epoch 9, loss is 0.49230295916398364
+start training simple model
+start training memory model
+epoch 0, loss is 1.8800245693751745
+epoch 1, loss is 1.6343477368354797
+epoch 2, loss is 1.247400666986193
+epoch 3, loss is 1.0055773173059737
+epoch 4, loss is 0.927355081175587
+epoch 5, loss is 0.7977429905108043
+epoch 6, loss is 0.864847577043942
+epoch 7, loss is 0.6648484766483307
+epoch 8, loss is 0.5550274307440434
+epoch 9, loss is 0.5882414014943477
+start training memory model
+epoch 0, loss is 6.058753728866577
+epoch 1, loss is 4.122680127620697
+epoch 2, loss is 2.846093714237213
+epoch 3, loss is 1.9457721710205078
+epoch 4, loss is 1.3542457520961761
+epoch 5, loss is 0.9824088662862778
+epoch 6, loss is 0.6601996347308159
+epoch 7, loss is 0.5521331951022148
+epoch 8, loss is 0.4694940820336342
+epoch 9, loss is 0.30578362196683884
+start training simple model
+start training memory model
+epoch 0, loss is 2.252181512968881
+epoch 1, loss is 2.011726805141994
+epoch 2, loss is 1.556380374091012
+epoch 3, loss is 1.5138624140194483
+epoch 4, loss is 1.2855797835758753
+epoch 5, loss is 1.1960098658289229
+epoch 6, loss is 0.994675202029092
+epoch 7, loss is 0.8642942582789276
+epoch 8, loss is 0.8964656506265912
+epoch 9, loss is 0.7802950654711042
+start training memory model
+epoch 0, loss is 7.281622409820557
+epoch 1, loss is 5.142048072814942
+epoch 2, loss is 3.4795681953430178
+epoch 3, loss is 2.3685913562774656
+epoch 4, loss is 1.721474528312683
+epoch 5, loss is 1.2554118394851685
+epoch 6, loss is 0.9931941986083984
+epoch 7, loss is 0.7144718647003174
+epoch 8, loss is 0.608954918384552
+epoch 9, loss is 0.5293188512325286
+start training simple model
+start training memory model
+epoch 0, loss is 2.2636280996458873
+epoch 1, loss is 1.7401594434465681
+epoch 2, loss is 1.6681832245418005
+epoch 3, loss is 1.5001768938132696
+epoch 4, loss is 1.280995445592063
+epoch 5, loss is 1.0272938162088394
+epoch 6, loss is 1.1935871190258436
+epoch 7, loss is 0.958228370973042
+epoch 8, loss is 0.891318678855896
+epoch 9, loss is 1.1166529719318663
+start training memory model
+epoch 0, loss is 7.016824313572475
+epoch 1, loss is 4.33568845476423
+epoch 2, loss is 2.9589733566556657
+epoch 3, loss is 2.1983162334987094
+epoch 4, loss is 1.555316916533879
+epoch 5, loss is 1.0445889340979713
+epoch 6, loss is 0.9646030408995492
+epoch 7, loss is 0.6359711906739643
+epoch 8, loss is 0.516621687582561
+epoch 9, loss is 0.626791558095387
+start training simple model
+start training memory model
+epoch 0, loss is 2.104444818837302
+epoch 1, loss is 1.777605082307543
+epoch 2, loss is 1.5516688653400965
+epoch 3, loss is 1.3783170240265983
+epoch 4, loss is 1.233968042901584
+epoch 5, loss is 1.151741189616067
+epoch 6, loss is 1.1740157731941767
+epoch 7, loss is 0.9552443900278637
+epoch 8, loss is 0.9533735343388149
+epoch 9, loss is 0.7115135405744825
+start training memory model
+epoch 0, loss is 6.922766327857971
+epoch 1, loss is 4.53181266784668
+epoch 2, loss is 3.1192308962345123
+epoch 3, loss is 2.3708213716745377
+epoch 4, loss is 1.6720296293497086
+epoch 5, loss is 1.2500889673829079
+epoch 6, loss is 0.9604316651821136
+epoch 7, loss is 0.842241769656539
+epoch 8, loss is 0.7488103695213795
+epoch 9, loss is 0.6834219414740801
+start training simple model
+start training memory model
+epoch 0, loss is 2.4602228573390414
+epoch 1, loss is 1.7320565325873238
+epoch 2, loss is 1.4836615324020386
+epoch 3, loss is 1.5634806879929133
+epoch 4, loss is 1.0392504675047738
+epoch 5, loss is 1.0050552998270308
+epoch 6, loss is 0.8513360789843968
+epoch 7, loss is 0.844302869268826
+epoch 8, loss is 0.6829248951897691
+epoch 9, loss is 0.6366349479981831
+start training memory model
+epoch 0, loss is 7.407265080346002
+epoch 1, loss is 4.562227169672648
+epoch 2, loss is 3.189783467186822
+epoch 3, loss is 2.2029018931918674
+epoch 4, loss is 1.5492103232277765
+epoch 5, loss is 1.142019146018558
+epoch 6, loss is 0.8651106490029229
+epoch 7, loss is 0.689244399468104
+epoch 8, loss is 0.5981775687800513
+epoch 9, loss is 0.5301114353868697
+start training simple model
+start training memory model
+epoch 0, loss is 3.575375488826207
+epoch 1, loss is 2.526507684162685
+epoch 2, loss is 2.2376227847167423
+epoch 3, loss is 2.506810784339905
+epoch 4, loss is 1.9181591442653112
+epoch 5, loss is 1.7032542995044164
+epoch 6, loss is 1.7056701183319092
+epoch 7, loss is 1.8286019095352717
+epoch 8, loss is 2.046486573559897
+epoch 9, loss is 1.4245955986636025
+start training memory model
+epoch 0, loss is 7.8326404094696045
+epoch 1, loss is 4.9927068710327145
+epoch 2, loss is 3.449072313308716
+epoch 3, loss is 2.368275690078735
+epoch 4, loss is 1.6163782954216004
+epoch 5, loss is 1.1881662130355835
+epoch 6, loss is 0.9152486473321915
+epoch 7, loss is 0.7324111521244049
+epoch 8, loss is 0.6386478662490844
+epoch 9, loss is 0.6071577087044716
+round: 4, current_acc: [0.949, 0.829, 0.684, 0.786, 0.83, 0.738, 0.771, 0.75], history_acc: [0.949, 0.8375, 0.7726666666666666, 0.7365, 0.7022, 0.6893333333333334, 0.6558571428571428, 0.629625]
+set seed: 600
+Shuffle index: [7 1 3 6 4 0 2 5]
+start training simple model
+start training memory model
+epoch 0, loss is 0.9660656888484955
+epoch 1, loss is 0.46633519399166107
+epoch 2, loss is 0.2289064870708389
+epoch 3, loss is 0.08930742759758141
+epoch 4, loss is 0.043635003868999774
+epoch 5, loss is 0.0257633454691495
+epoch 6, loss is 0.020356238406780903
+epoch 7, loss is 0.12639696059162633
+epoch 8, loss is 0.01775924182140807
+epoch 9, loss is 0.01002608235410662
+start training memory model
+epoch 0, loss is 8.90623437044269e-06
+epoch 1, loss is 3.6279010373618803e-06
+epoch 2, loss is 2.0583916011673864e-06
+epoch 3, loss is 4.5653040636750575e-07
+epoch 4, loss is 4.3982599606806616e-07
+epoch 5, loss is 2.6496210736581816e-07
+epoch 6, loss is 2.2920645292856534e-07
+epoch 7, loss is 1.4515704194195678e-07
+epoch 8, loss is 2.0186284643841645e-07
+epoch 9, loss is 1.388111616762444e-07
+start training simple model
+start training memory model
+epoch 0, loss is 2.43998255740319
+epoch 1, loss is 2.404501680816923
+epoch 2, loss is 1.9605072353567397
+epoch 3, loss is 1.2516807147434779
+epoch 4, loss is 1.131131728445845
+epoch 5, loss is 0.9165849387645721
+epoch 6, loss is 0.7784911809223038
+epoch 7, loss is 1.0370223820209503
+epoch 8, loss is 0.8172014207313103
+epoch 9, loss is 0.6922396068195147
+start training memory model
+epoch 0, loss is 5.090543031692505
+epoch 1, loss is 3.7564520835876465
+epoch 2, loss is 3.0869328578313193
+epoch 3, loss is 2.276758367816607
+epoch 4, loss is 2.171650211016337
+epoch 5, loss is 1.4978171189626057
+epoch 6, loss is 1.286420742670695
+epoch 7, loss is 1.1719577983021736
+epoch 8, loss is 0.8589876418312391
+epoch 9, loss is 0.8877133131027222
+start training simple model
+start training memory model
+epoch 0, loss is 4.09214356967381
+epoch 1, loss is 3.4538263423102245
+epoch 2, loss is 3.0973177637372697
+epoch 3, loss is 2.9748974357332503
+epoch 4, loss is 2.7006420407976424
+epoch 5, loss is 2.4047153166362216
+epoch 6, loss is 2.303336977958679
+epoch 7, loss is 2.066707193851471
+epoch 8, loss is 2.094091977391924
+epoch 9, loss is 1.9582045248576574
+start training memory model
+epoch 0, loss is 7.2310590744018555
+epoch 1, loss is 5.414309859275818
+epoch 2, loss is 4.209804952144623
+epoch 3, loss is 3.374000608921051
+epoch 4, loss is 2.6825639605522156
+epoch 5, loss is 2.0374739468097687
+epoch 6, loss is 1.7937602400779724
+epoch 7, loss is 1.5344075858592987
+epoch 8, loss is 1.4293359369039536
+epoch 9, loss is 1.343591034412384
+start training simple model
+start training memory model
+epoch 0, loss is 2.6706240006855557
+epoch 1, loss is 2.2263330732073103
+epoch 2, loss is 1.6903960279056005
+epoch 3, loss is 1.435110330581665
+epoch 4, loss is 1.384552231856755
+epoch 5, loss is 1.164175187503653
+epoch 6, loss is 1.1466053894587926
+epoch 7, loss is 1.0738422913210732
+epoch 8, loss is 0.9863978539194379
+epoch 9, loss is 0.9332468053991241
+start training memory model
+epoch 0, loss is 6.797590827941894
+epoch 1, loss is 4.725694274902343
+epoch 2, loss is 3.2756518363952636
+epoch 3, loss is 2.7739774703979494
+epoch 4, loss is 1.993240189552307
+epoch 5, loss is 1.5758791446685791
+epoch 6, loss is 1.3545147895812988
+epoch 7, loss is 1.1528766632080079
+epoch 8, loss is 0.88132164478302
+epoch 9, loss is 0.7865368068218231
+start training simple model
+start training memory model
+epoch 0, loss is 2.8718442235674178
+epoch 1, loss is 2.340209824698312
+epoch 2, loss is 2.2965978043419972
+epoch 3, loss is 1.9112787757601057
+epoch 4, loss is 1.9056666237967355
+epoch 5, loss is 1.7405817338398524
+epoch 6, loss is 1.513197387967791
+epoch 7, loss is 1.4822460583278112
+epoch 8, loss is 1.3553488509995597
+epoch 9, loss is 1.2165988513401575
+start training memory model
+epoch 0, loss is 6.776802097048078
+epoch 1, loss is 4.831375360488892
+epoch 2, loss is 3.4326228754861012
+epoch 3, loss is 2.286637340273176
+epoch 4, loss is 1.9011238983699255
+epoch 5, loss is 1.2307344760213579
+epoch 6, loss is 0.9513056448527745
+epoch 7, loss is 0.8004548123904637
+epoch 8, loss is 0.6759084207671029
+epoch 9, loss is 0.6301677078008652
+start training simple model
+start training memory model
+epoch 0, loss is 1.6549948113305228
+epoch 1, loss is 1.2321886760847909
+epoch 2, loss is 1.0969311509813582
+epoch 3, loss is 0.9336410590580532
+epoch 4, loss is 0.7627821245363781
+epoch 5, loss is 0.6205672749451229
+epoch 6, loss is 0.5092476839199662
+epoch 7, loss is 0.5882491682256971
+epoch 8, loss is 0.5590382452522006
+epoch 9, loss is 0.3895925773041589
+start training memory model
+epoch 0, loss is 7.850208818912506
+epoch 1, loss is 4.9337464570999146
+epoch 2, loss is 3.41683566570282
+epoch 3, loss is 2.3278132528066635
+epoch 4, loss is 1.794010303914547
+epoch 5, loss is 1.2647359073162079
+epoch 6, loss is 1.098996140062809
+epoch 7, loss is 0.9321154020726681
+epoch 8, loss is 0.716044507920742
+epoch 9, loss is 0.6369056282564998
+start training simple model
+start training memory model
+epoch 0, loss is 2.137466617992946
+epoch 1, loss is 1.3980243802070618
+epoch 2, loss is 1.2181246536118644
+epoch 3, loss is 1.2849485916750771
+epoch 4, loss is 1.2206780910491943
+epoch 5, loss is 0.8410350446190152
+epoch 6, loss is 0.738261239869254
+epoch 7, loss is 0.7795034348964691
+epoch 8, loss is 0.6215721877025706
+epoch 9, loss is 0.5917758521557387
+start training memory model
+epoch 0, loss is 7.657022794087728
+epoch 1, loss is 4.791604280471802
+epoch 2, loss is 3.3099762068854437
+epoch 3, loss is 2.2204048766030207
+epoch 4, loss is 1.6798421806759305
+epoch 5, loss is 1.2332738373014662
+epoch 6, loss is 0.9694303141699897
+epoch 7, loss is 0.7727009819613563
+epoch 8, loss is 0.6984540157847934
+epoch 9, loss is 0.6120881992909644
+start training simple model
+start training memory model
+epoch 0, loss is 1.2844054528645106
+epoch 1, loss is 1.0396255127021246
+epoch 2, loss is 0.9936632599149432
+epoch 3, loss is 0.8053286160741534
+epoch 4, loss is 0.7294759058526584
+epoch 5, loss is 0.6258605718612671
+epoch 6, loss is 0.5973256172645571
+epoch 7, loss is 0.5420808380669249
+epoch 8, loss is 0.5585436266805378
+epoch 9, loss is 0.5968151103172984
+start training memory model
+epoch 0, loss is 6.8346960067749025
+epoch 1, loss is 4.382815051078796
+epoch 2, loss is 2.9756534337997436
+epoch 3, loss is 2.065880525112152
+epoch 4, loss is 1.3753786087036133
+epoch 5, loss is 1.012781846523285
+epoch 6, loss is 0.6920664072036743
+epoch 7, loss is 0.5527494221925735
+epoch 8, loss is 0.5141785010695458
+epoch 9, loss is 0.4860476806759834
+round: 5, current_acc: [0.955, 0.844, 0.76, 0.79, 0.727, 0.772, 0.77, 0.871], history_acc: [0.955, 0.876, 0.7513333333333333, 0.69925, 0.6496, 0.6281666666666667, 0.6182857142857143, 0.62725]
+>>>>>>>>>>>>>>>current_acc<<<<<<<<<<<<<<<
+
+
+[0.955, 0.844, 0.76, 0.79, 0.727, 0.772, 0.77, 0.871]
+
+
+----------------------------------------
+
+
+>>>>>>>>>>>>>>>history_acc<<<<<<<<<<<<<<<
+
+
+[0.955, 0.876, 0.7513333333333333, 0.69925, 0.6496, 0.6281666666666667, 0.6182857142857143, 0.62725]
+
+
+----------------------------------------
+
+
+>>>>>>>>>>>>>>>all_current_acc<<<<<<<<<<<<<<<
+
+
+[0.954, 0.787, 0.781, 0.912, 0.82, 0.812, 0.698, 0.793]
+[0.949, 0.702, 0.752, 0.851, 0.764, 0.764, 0.895, 0.742]
+[0.949, 0.863, 0.753, 0.756, 0.921, 0.693, 0.73, 0.764]
+[0.942, 0.791, 0.821, 0.857, 0.883, 0.689, 0.794, 0.699]
+[0.949, 0.829, 0.684, 0.786, 0.83, 0.738, 0.771, 0.75]
+[0.955, 0.844, 0.76, 0.79, 0.727, 0.772, 0.77, 0.871]
+
+
+----------------------------------------
+
+
+>>>>>>>>>>>>>>>all_current_acc_mean<<<<<<<<<<<<<<<
+
+
+[0.9496666666666665, 0.8026666666666666, 0.7585000000000001, 0.8253333333333335, 0.8241666666666667, 0.7446666666666667, 0.7763333333333332, 0.7698333333333333]
+
+
+----------------------------------------
+
+
+>>>>>>>>>>>>>>>all_current_acc_std<<<<<<<<<<<<<<<
+
+
+all_current_acc_std:  [0.004229525846816511, 0.05253147204824509, 0.0409013039726934, 0.052876165603123, 0.06576578813402063, 0.043717527631628776, 0.06157019480957398, 0.05321471183381112]
+
+
+----------------------------------------
+
+
+>>>>>>>>>>>>>>>all_history_acc<<<<<<<<<<<<<<<
+
+
+[0.954, 0.799, 0.7766666666666666, 0.74025, 0.7068, 0.6676666666666666, 0.6454285714285715, 0.6205]
+[0.949, 0.7765, 0.7203333333333334, 0.671, 0.6562, 0.6033333333333334, 0.6068571428571429, 0.59425]
+[0.949, 0.822, 0.7393333333333333, 0.67225, 0.664, 0.6576666666666666, 0.6197142857142857, 0.62275]
+[0.942, 0.778, 0.7393333333333333, 0.70075, 0.7172, 0.6793333333333333, 0.671, 0.6255]
+[0.949, 0.8375, 0.7726666666666666, 0.7365, 0.7022, 0.6893333333333334, 0.6558571428571428, 0.629625]
+[0.955, 0.876, 0.7513333333333333, 0.69925, 0.6496, 0.6281666666666667, 0.6182857142857143, 0.62725]
+
+
+----------------------------------------
+
+
+>>>>>>>>>>>>>>>all_history_acc_mean<<<<<<<<<<<<<<<
+
+
+all_history_acc:  [0.9496666666666665, 0.8148333333333334, 0.7499444444444444, 0.7033333333333333, 0.6826666666666666, 0.6542499999999999, 0.6361904761904762, 0.6199791666666666]
+
+
+----------------------------------------
+
+
+>>>>>>>>>>>>>>>all_history_acc_std<<<<<<<<<<<<<<<
+
+
+all_history_acc_std:  [0.004229525846816511, 0.03507927529974865, 0.01972441302385958, 0.027379534124759835, 0.02676706101826563, 0.02978965610931268, 0.022863044872931473, 0.011876626350619209]
+
+
+----------------------------------------
+
+
